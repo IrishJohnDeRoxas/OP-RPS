@@ -26,6 +26,7 @@ function computerChoice(){
 
 
 function updateScore(playerChoice, computerChoice){
+    winner.innerText = ''
     console.log(playerChoice+computerChoice)
     switch(playerChoice+computerChoice){
         case 'rockscissors':
@@ -88,11 +89,11 @@ function updateScore(playerChoice, computerChoice){
 
 function checkWinner() {
     if (currentPlayerScore === 6 ){
-        winner.innerText = 'Player reach 5 points'
+        winner.innerText = 'Player reach 5 points first'
         title.innerText = ''
         showRestart()
     }else if(currentComputerScore === 6){
-        winner.innerText = 'Computer reach 5 points'
+        winner.innerText = 'Computer reach 5 points first'
         title.innerText = ''
         showRestart()
     }

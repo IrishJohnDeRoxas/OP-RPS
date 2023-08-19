@@ -123,3 +123,16 @@ button{
     margin-top: 20px;
     font-size: 1em;
 }
+@media(width <= 425px){
+    .buttons{
+        width: 80%;
+    }
+    .option{
+        width: 100px;
+        height: 100px;
+    }
+    .sign{
+        font-size: 50px;
+
+    }
+}
