@@ -18,20 +18,30 @@
         <h1>Rock Paper Scissor</h1>
     </header>
 
+    <div class="modal-container" id="modal-container">
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <h1>Game over</h1>
+                <p id="modal-message"></p>
+                <button id="restart-button">Restart</button>
+            </div>
+        </div>
+    </div>
+
     <div class="main">
         <div class="scoreboard">
 
-            <h2>Choose your weapon</h2>
-            <h3>First to score 5 points wins the game</h3>
+            <h2 id="winner">Choose your weapon</h2>
+            <h3 id="title">First to score 5 points wins the game</h3>
 
             <div class="score-container">
                 <div class="scorebox">
-                    <div class="sign">❔</div>
-                    <p class="score" id="playerScore">Player: 0</p>
+                    <div class="sign" id="playerSign">❔</div>
+                    <p class="score">Player: <span id="playerScore">0</span></p>
                 </div>
                 <div class="scorebox">
-                    <div class="sign">❔</div>
-                    <p class="score" id="computerScore">Computer: 0</p>
+                    <div class="sign" id="computerSign">❔</div>
+                    <p class="score">Computer: <span id="computerScore">0</span></p>
                 </div>
             </div>
         </div>
@@ -47,6 +57,8 @@
             </button>
         </div>
     </div>
+
+    
     <script src="/static/RPS.js"></script>
 </body>
 </html>
